@@ -74,12 +74,12 @@ export PATH=$PATH:$JAVA_HOME/bin
 # Fetch and install lein script
 LEIN_DIR=${HOME}/bin
 if [ ! -d "$LEIN_DIR" ]; then
-  mkdir $LEIN_DIR
+  mkdir -p $LEIN_DIR
 fi
 
 LEIN_BIN=${LEIN_DIR}/lein
 if [ ! -f "$LEIN_BIN" ]; then
-  curl https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein -o $LEIN_BIN
+  curl -sSL https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein -o $LEIN_BIN
 fi
 
 # Build uberwar
