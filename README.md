@@ -1,19 +1,3 @@
-# clojure-on-azure
+Sample project for [http://www.jayway.com/2015/03/23/running-clojure-on-azure-websites/](http://www.jayway.com/2015/03/23/running-clojure-on-azure-websites/).
 
-FIXME
-
-## Prerequisites
-
-You will need [Leiningen][1] 1.7.0 or above installed.
-
-[1]: https://github.com/technomancy/leiningen
-
-## Running
-
-To start a web server for the application, run:
-
-    lein ring server
-
-## License
-
-Copyright © 2015 FIXME
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
