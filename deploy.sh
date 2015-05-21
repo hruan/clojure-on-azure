@@ -92,8 +92,8 @@ _JAVA_OPTIONS='-Djava.net.preferIPv4Stack=true' sh $LEIN_BIN ring uberwar $WAR_N
 
 echo Handling Basic Web Site deployment.
 
-WAR_SRC=${DEPLOYMENT_SOURCE}/target/${WAR_NAME}
-WAR_DST=${DEPLOYMENT_TARGET}/webapps/${WAR_NAME}
+WAR_SRC=/d/home/site/repository/target/${WAR_NAME}
+WAR_DST=/d/home/site/wwwroot/webapps/${WAR_NAME}
 if [[ "$IN_PLACE_DEPLOYMENT" -ne "1" ]]; then
   rm -rfv $WAR_DST ${WAR_DST%.*}
   cp -fv $WAR_SRC $WAR_DST
